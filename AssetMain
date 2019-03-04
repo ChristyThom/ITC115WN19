@@ -1,0 +1,14 @@
+
+public class AssetMain {
+
+	public static void main(String[] args) {
+
+		Stock s = new Stock("AMZN", 900);
+		Cash c = new Cash();
+		
+		s.assetDescription();
+		System.out.println(c.getMarketValue());		
+
+	}
+
+}
