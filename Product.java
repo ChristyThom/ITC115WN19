@@ -1,27 +1,25 @@
 import java.text.NumberFormat;
 
 public class Product {
-	/* FIELDS */
-	private int productCode;
+	//Fields
+	private int product;
 	private String description;
 	private double price;
 
 	
-	/* CONSTRUCTOR */
-	//precondition: productCode != 0 and description != null
-	public Product(int productCode, String description, double price) {
-		if (productCode == 0 || description == null) {
+	//Constructor - because I finally understand what a constructor is with this assignment
+	public Product(int product, String description, double price) {
+		if (product == 0 || description == null) {
 			throw new NullPointerException();
 		}
 		
-		this.productCode = productCode;
+		this.product = product;
 		this.description = description;
 		this.price = price;
 	
 	}
 	
-	/* METHODS */
-	//returns a string with a currency format appropriate for display to the user
+	//Method
 	public String getPriceFormatted() {
         String formattedPrice = NumberFormat.getCurrencyInstance().format(this.price);
         return formattedPrice;
@@ -30,16 +28,16 @@ public class Product {
 	//returns a string representation of the product
 		public String toString() {
 			String formattedPrice = this.getPriceFormatted();
-			return "Product Code: " + productCode + "  Description: " + description + "  Price: " + formattedPrice;
+			return "Product Number: " + product + "  What are you wearing: " + description + "  Cost: " + formattedPrice;
 		}
 		
-	//getters and setters
-	public int getProductCode() {
-		return productCode;
+	//getters and setters -- god I love how you can right click to load this!!! YAY ECLIPSE HELP!!!
+	public int getProduct() {
+		return product;
 	}
 
-	public void setProductCode(int productCode) {
-		this.productCode = productCode;
+	public void setProduct(int product) {
+		this.product = product;
 	}
 
 	public String getDescription() {
