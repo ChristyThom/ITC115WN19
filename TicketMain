@@ -14,7 +14,7 @@ public class TicketMain {
 		
 		
 		Ticket[] t = {new WalkupTicket(102), new AdvancedTicket(103,15), new AdvancedTicket(104,7),
-				new WalkupTicket(105), new AdvancedTicket(106,42)};
+				new WalkupTicket(105), new AdvancedTicket(106,42), new StudentAdvancedTicket (107,21), new StudentAdvancedTicket(108,9)};
 		
 		//.length is for how many things are in the array
 		//i is the index and starts at 0 ...
