@@ -1,0 +1,24 @@
+//extension of SuperClass Ticket
+
+public class AdvancedTicket extends Ticket {
+	
+	private int daysInAdvance;
+									//must add the days in advance to this argument since the ticket prices are conditional	
+	public AdvancedTicket(int number, int daysInAdvance) {
+		super(number);
+		this.daysInAdvance = daysInAdvance;
+	}
+	//if you are extending ticket -- must override the getPrice
+	
+	@Override
+	public double getPrice() {
+		if(daysInAdvance >= 10) {
+			return 30.00;
+		}
+		else {
+		return 40.00;
+		}
+	}
+	
+
+}
