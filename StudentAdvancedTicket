@@ -1,0 +1,22 @@
+//advanced Student Ticket - homework class 
+public class StudentAdvancedTicket extends AdvancedTicket {
+
+	private int daysInAdvance;
+	
+	public StudentAdvancedTicket(int number, int daysInAdvance) {
+		super(number, daysInAdvance);
+		this.daysInAdvance = daysInAdvance;
+	}
+	
+	@Override
+	public double getPrice() {
+		if(daysInAdvance >= 10) {
+			return 15.00;
+		}
+		else {
+			return 20.00;
+		}
+	}	
+	
+
+}
