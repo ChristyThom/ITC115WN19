@@ -1,0 +1,27 @@
+
+public class TicketMain {
+
+	public static void main(String[] args) {
+		// Ticket t = new Ticket(100); // cannot instantiate an abstract class
+		
+		WalkupTicket wt1 = new WalkupTicket(101);
+		
+		//get wt1 price -- must print out 
+		System.out.println(wt1.getPrice());
+		
+		System.out.println(wt1.toString());
+		
+		
+		
+		Ticket[] t = {new WalkupTicket(102), new AdvancedTicket(103,15), new AdvancedTicket(104,7),
+				new WalkupTicket(105), new AdvancedTicket(106,42)};
+		
+		//.length is for how many things are in the array
+		//i is the index and starts at 0 ...
+		for(int i = 0; i < t.length; i++) {
+			System.out.println(t[i].getClass() + " " + t[i].toString());
+		}
+
+	}
+
+}
