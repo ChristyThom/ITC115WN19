@@ -1,0 +1,22 @@
+//extension of Ticket SuperClass
+
+public class WalkupTicket extends Ticket {
+	
+	
+	private String ticketType;
+	
+	public WalkupTicket(int number) {
+		//invoke the constructor of the super class -- must get from the FIELD superclass (Ticket) itself and whatever you have named it 
+		//-- in this case - "number"
+		super(number);
+		ticketType = "Walkup";
+		
+	}
+	
+	@Override
+	public double getPrice() {
+		// added via double click on error that shows the constructor is missing
+		return 50.00;
+	}
+	
+}
