@@ -1,7 +1,7 @@
 //represents marketers
 public class Marketer extends Employee {
 
-	/* METHODS */
+	//methods
 	@Override
 	public double getSalary() {
 		return 50000.0;
