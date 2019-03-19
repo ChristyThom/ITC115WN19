@@ -1,7 +1,7 @@
 //represents lawyers
 public class Lawyer extends Employee {
 
-	/* METHODS */
+	//methods
 	@Override
 	public String getVacationForm() {
 		return "pink";
