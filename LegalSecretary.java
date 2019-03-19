@@ -1,7 +1,7 @@
 //represents legal secretaries
 public class LegalSecretary extends Secretary {
 	
-	/* METHODS */
+	//methods
 	@Override
 	public double getSalary() {
 		return super.getSalary() + 5000;
