@@ -1,7 +1,7 @@
 //represents employees in general
 public class Employee {
 	
-	/* METHODS */
+	//METHODS
 	public String getVacationForm() {
 		return "yellow";
 	}
