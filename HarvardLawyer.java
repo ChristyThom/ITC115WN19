@@ -1,9 +1,9 @@
 //represents the highly specialized "HARVARD" lawyer
 public class HarvardLawyer extends Lawyer {
-	/* FIELDS */
+	//fields
 	private int numberOfVacationFormsRequired = 4;
 	
-	/* METHODS */
+	//methods
 	@Override
 	public String getVacationForm() {
 		String result = "";
