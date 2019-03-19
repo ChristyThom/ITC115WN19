@@ -1,7 +1,7 @@
 //represents janitors
 public class Janitor extends Employee {
 	
-	/* METHODS */
+	//methods - includes SUPER class
 	@Override
 	public int getHours() {
 		return super.getHours() * 2;
